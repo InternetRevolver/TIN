@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Lista użytkowników</title>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <!-- <script src='main.js'></script> -->
+
+    <link rel="stylesheet" href="../css/styl.css" type="text/css" />
+    <link rel="stylesheet" href="../css/table.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 id="logo"><a href="home logged.html">Logo firmy</a> </h1>
+            <button class="login" type="button" onclick="location.href='admin panel.html'">Admin Panel</button>
+            <p id="loginInfo">Logged as: XYZ</p>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="leauges">
+            <button id="leauge1" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 1</button>
+            <button id="leauge2" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 2</button>
+            <button id="leauge3" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 3</button>
+            <select id="leaugeList" name="leaugesList">
+                    <option value="leauge 1">Leauge 1</option>
+                    <option value="leauge 2">Leauge 2</option>
+                  </select>
+        </div>
+    </nav>
+
+    <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>League</li>
+
+        </ul>
+        <h1>Lista użytkowników:</h1>
+        <table class="entity-table">
+            <tr>
+                <th>Id</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Akcje</th>
+            </tr>
+            <% leagueList.forEach(function(league){ %>
+            <tr>
+                <td><%= league.id %></td>
+                <td><%= league.fullName %></td>
+                <td><%= league.foundationYear %></td>
+                <td class="actions">
+                    <a href="/users/showDetails?user_id=<%= league.id %>">Szczegóły</a>
+                    <a href="/users/showEditForm?user_id=<%= league.id %>">Edytuj</a>
+                    <a href="/users/delete?user_id=<%= league.id %>">Usuń</a>
+                </td>
+            </tr>
+            <% }) %>
+            <tr class="table-footer">
+                <td colspan="4"><a href="/users/showNewForm">Nowy użytkownik</a></td>
+            </tr>
+        </table>
+
+ 
+    </section>
+
+    <footer>
+        <div class="linksFooter">
+            <ul class="contact">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <img id="fb" src="img/fb.png" alt="fb icon" height="32" width="32"> 
+                <img id="inst" src="img/instagram.png" alt="instagram icon" height="32" width="32"> 
+                <p>Social Media:</p>
+            </ul>
+    </footer>
+</body>
+
+</html>
+

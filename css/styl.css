@@ -1,0 +1,150 @@
+header {background: chocolate; width: 100%; height: 15%;}
+nav{background: crimson; width: 100%; height: 10%;}
+section { background: white; width:100%; height: 60%; }
+footer { background: gray; width:100%; height: 15%; clear: both; }
+h1 { 
+    color: black; 
+    grid-column: 0;
+    grid-row: 1;
+    margin-left: 5%;
+}
+.login {
+    grid-column: 3;
+    grid-row-start: 2;
+    margin-right: 15%;
+}
+.head {
+    display: grid;
+    grid-template-columns: 30% 50% 10% 10%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+#loginInfo {
+    display: flex;
+    align-items: center;
+    grid-column: 4;
+    grid-row: 2;
+}
+.leauges {
+    display: grid;
+    margin-top: 1%;
+    margin-bottom: 1%;;
+    grid-template-columns: 10% 5% 10% 5% 10% 45% 15%;
+}
+#leaugeList {
+    margin-right: 10%;
+    margin-top: 10%;
+    grid-column: 7;
+}
+
+#leauge1 {
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-column: 1;
+}
+
+#leauge2 {
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-column: 3;
+}
+#leauge3 {
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-column: 5;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 5px 5px;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+h2 {
+    font-size: 20;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+#bestWeek {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.linksFooter {
+    display: inline;
+}
+ul.contact {
+    margin-top: 20px;
+}
+ul.contact li{
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px 50px 0 0;
+}
+ul.contact p {
+    font-size: 18px;
+    display: inline;
+    float: right;
+}
+ul.contact img {
+    margin: 10px 20px 10px 20px ;
+    float: right;
+}
+
+  /* Add a color on mouse-over */
+ul.contact li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.adminButton {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.buttonsAdmin {
+    grid-column: 2;
+    padding: 0 50px 0 0;
+}
+
+.listsAdmin {
+    grid-column: 3;
+    padding: 0 0 0 50px;
+}
+
+
+

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>Tytuł strony</title>
+<link rel="stylesheet" href="css/styl.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 id="logo"><a href="index.html">Logo firmy</a> </h1>
+            <button class="login" type="button" onclick="location.href='login.html'">Login</button>
+            <p id="loginInfo">Login to see Panel</p>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="leauges">
+            <button id="leauge1" class="leaugeButton" onclick="location.href='league.html'">Liga nr 1</button>
+            <button id="leauge2" class="leaugeButton"onclick="location.href='league.html'">Liga nr 2</button>
+            <button id="leauge3" class="leaugeButton"onclick="location.href='league.html'">Liga nr 3</button>
+            <select id="leaugeList" name="leaugesList">
+                    <option value="leauge 1">Leauge 1</option>
+                    <option value="leauge 2">Leauge 2</option>
+            </select>
+        </div>
+    </nav>
+
+    <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Home</li>
+        </ul>
+        <h2>The best photo of week:</h2>
+        <img id="bestWeek" src="img/bestWeek.jpg" alt="best week photo" height="200" width="350"> 
+    </section>
+
+    <footer>
+        <div class="linksFooter">
+            <ul class="contact">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <img id="fb" src="img/fb.png" alt="fb icon" height="32" width="32"> 
+                <img id="inst" src="img/instagram.png" alt="instagram icon" height="32" width="32"> 
+                <p>Social Media:</p>
+            </ul>
+    </footer>
+</body>
+
+</html>

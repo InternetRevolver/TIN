@@ -1,0 +1,79 @@
+<html>
+
+<head>
+<title>Tytuł strony</title>
+<link rel="stylesheet" href="css/styl.css" type="text/css" />
+<link rel="stylesheet" href="css/form.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 id="logo"><a href="home logged.html">Logo firmy</a> </h1>
+            <button class="login" type="button" onclick="location.href='admin panel.html'">Admin Panel</button>
+            <p id="loginInfo">Logged as: XYZ</p>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="leauges">
+            <button id="leauge1" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 1</button>
+            <button id="leauge2" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 2</button>
+            <button id="leauge3" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 3</button>
+            <select id="leaugeList" name="leaugesList">
+                    <option value="leauge 1">Leauge 1</option>
+                    <option value="leauge 2">Leauge 2</option>
+                  </select>
+        </div>
+    </nav>
+
+    <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Home</li>
+        </ul>
+        <h2>Change data of league:</h2>
+        <form novalidate class="form1" id="formleagues" method="get" onsubmit="return validateForm()" >
+            <div class="label-input">
+                <label class="label" for="shortcut"> Full name:</label>
+                <input id="full_name" value="BUNDESLIGA" name="shortcut" type="text"/> <span class="required"><sup>*</sup></span>
+                <span id="errors_full_name" class="errors-text"></span>    
+            </div>
+            <div class="label-input">
+                <label class="label" for="full-name"> Foundation year:</label>
+                <input id="foundation_year" value="1900" name="full-name" type="number"/> 
+                <span id="errors_foundation_year" class="errors-text"></span>    
+            </div>
+            <div class="label-input">
+                <label class="label" for="budget"> Date start yearly:</label>
+                <input id="date_start" value="2000-01-01" name="budget" type="date"/> <span class="required"><sup>*</sup></span>
+                <span id="errors_date_start" class="errors-text"></span>    
+            </div> 
+            <div class="label-input">
+                <label class="label" for="date-start"> Date end yearly:</label>
+                <input id="date_end" value="2000-01-01" name="date-start" type="date"/> 
+                <span id="errors_date_end" class="errors-text"></span>    
+            </div>  
+               
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Clear"/>
+                <p id="errors_info" class="errors-text"></p>
+                <div id="errors_summary">
+                </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="linksFooter">
+            <ul class="contact">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <img id="fb" src="img/fb.png" alt="fb icon" height="32" width="32"> 
+                <img id="inst" src="img/instagram.png" alt="instagram icon" height="32" width="32"> 
+                <p>Social Media:</p>
+            </ul>
+    </footer>
+    <script src="js/createleague.js"></script>
+</body>
+
+</html>

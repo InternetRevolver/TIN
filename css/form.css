@@ -1,0 +1,35 @@
+
+.label {
+    display: block;
+    float: left;
+    width: 100px;
+}
+.label-input {
+    margin: 3px 0 3px 0;
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-reset {
+    margin: 0px 0 10px 0;
+}
+
+.bad {
+	color: red;
+}
+
+.errors-input {
+    border: 3px solid #e74c3c;
+}
+
+.errors-text {
+    font-size: 0.85em;
+}
+
+.errors-text,
+.required {
+    color: #e74c3c;
+}

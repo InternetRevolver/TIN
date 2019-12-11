@@ -1,0 +1,109 @@
+.match {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.bolded {
+    font-weight: bold;
+    margin-left: 5%;
+}
+.bolded2 {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 5%;
+}
+#info {
+    grid-column: 1/3
+}
+#login {
+    text-align: left;
+}
+
+#loginMatch {
+    grid-column: 3/8;
+}
+
+
+
+#score2 {
+	width: 30%;
+	margin-left: 70%;
+}
+
+#empty {
+    grid-column: 5 / span 3;
+}
+#team1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+#score1 {
+    text-align: right;
+    margin-right: 70%;
+}
+
+#score2 {
+    text-align: left;
+}
+
+#date {
+    text-align: right;
+    margin-right: 10%;
+}
+
+#datevalue {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-right: 50%;
+}
+
+#stadium {
+    text-align: right;
+    margin-right: 10%;
+}
+
+#stadiumvalue {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-right: 50%;
+}
+
+#arbiter {
+    text-align: right;
+    margin-right: 10%;
+}
+
+#arbitervalue {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-right: 50%;
+}
+/*
+
+FOR CREATING MATCH
+
+*/
+
+.match2teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.testblock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+#create-match {
+    margin-top: 20px;
+}

@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<title>Tytuł strony</title>
+<link rel="stylesheet" href="css/styl.css" type="text/css" />
+<link rel="stylesheet" href="css/match.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 id="logo"><a href="home logged.html">Logo firmy</a> </h1>
+            <button class="login" type="button" onclick="location.href='admin panel.html'">Admin Panel</button>
+            <p id="loginInfo">Logged as: XYZ</p>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="leauges">
+            <button id="leauge1" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 1</button>
+            <button id="leauge2" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 2</button>
+            <button id="leauge3" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 3</button>
+            <select id="leaugeList" name="leaugesList">
+                    <option value="leauge 1">Leauge 1</option>
+                    <option value="leauge 2">Leauge 2</option>
+                  </select>
+        </div>
+    </nav>
+
+    <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Match info</li>
+        </ul>
+        <div class="match" >
+            <p id="info">More info about match number: </p>
+            <p id="login">XYZ</p>
+            <button id="save">Save all changes</button>
+            <p id="empty"></p>
+            <p id="team1" class="bolded">Team (shortcut)</p>
+            <p id="team1value" class="normal">FC POM</p>
+            <input id="score1" class="normal" name="normal1" type="number" value="0"/>  
+            <p id="score" class="bolded">SCORE</p>
+            <input id="score2" class="normal" name="normal2" type="number" value="1"/>  
+            <p id="team2value" class="normal2">FC POM</p>
+            <p id="team2" class="bolded2">Team (shortcut)</p>
+
+
+            <p id="name1" class="bolded">Full name</p>
+            <select name="fullname1">
+                    <option value="fc nalewaki">FC Nalewaki</option>
+                    <option value="azs azetesy">AZS Azetesy</option>
+            </select>
+            <p id="date" class="bolded">Date</p>
+            <input id="datevalue" type="date" name="datevalue" value="02.02.1992">
+            <select name="fullname1">
+                    <option value="fc nalewaki">FC Nalewaki</option>
+                    <option value="azs azetesy">AZS Azetesy</option>
+            </select>
+            <p id="name2" class="bolded2">Full name</p>
+
+            <p id="budget1" class="bolded">Budget</p>
+            <p id="budget1value" class="normal">9999999</p>
+            <p id="stadium" class="bolded">Stadium</p>
+            <select id="stadiumvalue"name="stadiumvalue">
+                    <option value="fc nalewaki">Stantiago</option>
+                    <option value="azs azetesy">Bernabeu</option>
+            </select>
+            <p id="budget2value" class="normal2">9999999</p>
+            <p id="budget2" class="bolded2">Budget</p>
+
+            <p id="start1" class="bolded">Date Start</p>
+            <p id="budget1value" class="normal">02.02.1992</p>
+            <p id="arbiter" class="bolded">Arbiter</p>
+            <select id="arbitervalue"name="arbitervalue">
+                    <option value="fc nalewaki">Jasiek Kowalsky</option>
+                    <option value="azs azetesy">Macius Dabrowski</option>
+            </select>
+            <p id="start2value" class="normal2">02.02.1992</p>
+            <p id="start2" class="bolded2">Date Start</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="linksFooter">
+            <ul class="contact">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <img id="fb" src="img/fb.png" alt="fb icon" height="32" width="32"> 
+                <img id="inst" src="img/instagram.png" alt="instagram icon" height="32" width="32"> 
+                <p>Social Media:</p>
+            </ul>
+    </footer>
+    <script src="js/creatematch.js"></script>
+</body>
+
+</html>

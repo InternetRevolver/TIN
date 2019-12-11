@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<title>Tytuł strony</title>
+<link rel="stylesheet" href="css/styl.css" type="text/css" />
+<link rel="stylesheet" href="css/table.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 id="logo"><a href="home logged.html">Logo firmy</a> </h1>
+            <button class="login" type="button" onclick="location.href='admin panel.html'">Admin Panel</button>
+            <p id="loginInfo">Logged as: XYZ</p>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="leauges">
+            <button id="leauge1" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 1</button>
+            <button id="leauge2" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 2</button>
+            <button id="leauge3" class="leaugeButton" onclick="location.href='league logged.html'">Liga nr 3</button>
+            <select id="leaugeList" name="leaugesList">
+                    <option value="leauge 1">Leauge 1</option>
+                    <option value="leauge 2">Leauge 2</option>
+                  </select>
+        </div>
+    </nav>
+
+    <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Teams</li>
+
+        </ul>
+            <table class="table">
+                <thead>
+                   <tr> <th> Team Number <th> Shurtcut Name <th> Full Name <th> Date Start <th> Budget <th>Remove button
+                   <tr> <td> 98 <td> FC POM <td> FC POMIDORY  <td> 02.02.1990 <td> 99999 <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                   <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                   <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                   <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                    <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                   <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                    <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                    <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+                    <tr> <td> <td> <td>  <td>  <td>  <td> <button onclick="location.href='show team.html'">Change Data</button> <button>Remove</button>
+             </table>
+             <br>
+             <div class="moreScores">
+                <p id="morePages">More scores page: </p>
+                <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                        </div>
+                </div>
+             </div>
+    </section>
+
+    <footer>
+        <div class="linksFooter">
+            <ul class="contact">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <img id="fb" src="img/fb.png" alt="fb icon" height="32" width="32"> 
+                <img id="inst" src="img/instagram.png" alt="instagram icon" height="32" width="32"> 
+                <p>Social Media:</p>
+            </ul>
+    </footer>
+</body>
+
+</html>
